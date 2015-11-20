@@ -1,1 +1,9 @@
+name: iGetOP
+main: org.iMCCode.iGetOP.iGetOP
+version: 1.0
+description: This plugin is for any server!
+softdepend: [BukkitTelnet, WorldEdit, Essentials]
+authors: [Madgeek1450, Prozza, iHess, MysteriAce, Falceso]
 
+# Plugin.yml is no longer used to define commands.
+# Due to the CommandPermissions, iGOP_Command, CommandParameters.
