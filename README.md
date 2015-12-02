@@ -15,8 +15,3 @@ List of IDES:
 * Netbeans 8.0/8.1 IDE (Mostly Recommended)
 * ANT IDE (Kinda Recommended)
 * Eclipse (Least Recommended)
-
-----------------------------------------
-
-© Steven Lawson, © Jerom Sar.
-All rights reserved.
