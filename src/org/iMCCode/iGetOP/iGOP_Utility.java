@@ -70,7 +70,7 @@ public class iGOP_Utility {
               sender.sendMessage("§cAdd the player-name please!");
             }
             else if (args.length == 1) {
-              sender.sendMessage("§cAdd the message please!");
+              sender.sendMessage("§cYou need to Add the message too!");
             }
             else {
                 Player reciever = Bukkit.getPlayer(args[0]);
