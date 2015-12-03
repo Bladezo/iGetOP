@@ -6,6 +6,7 @@ import java.util.Random;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
+import static org.bukkit.Bukkit.getPlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -63,7 +64,8 @@ public class iGOP_Utility {
     {
         iGOP_Utility.bcMsg(adminName + " - " + action, (isRed ? ChatColor.RED : ChatColor.AQUA));
     }
-    public static void msgFormat(String message, Player sender) {
+    
+    public static boolean msgFormat(String message, Player sender, String[] args) {
     final Player player = getPlayer(args[0]);
         if (player == null)
         {
@@ -74,6 +76,7 @@ public class iGOP_Utility {
       player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
       sender.sendMessage(ChatColor.GRAY + "That message has been successfully send!");
     
+      return true;
     }
     
     public static ChatColor randomisicChatColor() {
