@@ -66,17 +66,21 @@ public class iGOP_Utility {
     }
     
     public static boolean msgFormat(String message, Player sender, String[] args) {
-    final Player player = getPlayer(args[0]);
-        if (player == null)
-        {
-            sender.sendMessage(ChatColor.GRAY + "That player is not online");
-            return true;
-        }
-      sender.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
-      player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
-      sender.sendMessage(ChatColor.GRAY + "That message has been successfully send!");
-    
-      return true;
+            if (args.length == 0) {
+              sender.sendMessage("§cAdd the player-name please!");
+            }
+            else if (args.length == 1) {
+              sender.sendMessage("§cAdd the message please!");
+            }
+            else {
+                Player reciever = Bukkit.getPlayer(args[0]);
+                if (reciever == null) {
+                    sender.sendMessage(ChatColor.GRAY + "Unknown Player");
+                }
+                else {
+                    String msg = ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + reciever.getName() + ChatColor.DARK_GRAY + "]" + ChatColor.GRAY + ": " + StringUtils.join(args," ", 1 , args.length);
+                }
+            }
     }
     
     public static ChatColor randomisicChatColor() {
