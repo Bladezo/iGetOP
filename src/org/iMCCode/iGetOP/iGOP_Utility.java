@@ -70,9 +70,21 @@ public class iGOP_Utility {
             sender.sendMessage(ChatColor.GRAY + "That player is not online");
             return true;
         }
-    sender.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
-    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
-    sender.sendMessage(ChatColor.GRAY + "That message has been successfully send!");
-      
+      sender.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
+      player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + sender.getName() + ChatColor.GRAY + " --- " + ChatColor.DARK_AQUA + player.getName() + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + message);
+      sender.sendMessage(ChatColor.GRAY + "That message has been successfully send!");
+    
     }
+    
+    public static ChatColor randomisicChatColor() {
+      return RANDOMCOLORS.get(RANDOM.nextInt(RANDOMCOLORS.size()));
+    }
+    
+    public static String formattedCode(String string) {
+      return ChatColor.translateAlternateColorCodes('&', string);
+    }
+    
+  public static void adminChatMessage(CommandSender sender, String message, boolean senderIsConsole) {
+    
+  }  
 }
