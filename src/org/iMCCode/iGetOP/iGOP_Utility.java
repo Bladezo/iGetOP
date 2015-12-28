@@ -27,7 +27,7 @@ public class iGOP_Utility {
   public static final List<String> Developers = Arrays.asList("");
   
   // the iMCCode Development Team. (DO NOT CHANGE/REMOVE!!)
-  public static final List<String> iMCCode_Founder = Arrays.asList("iHess");
+  public static final List<String> iMCCode_Founder = Arrays.asList("xYuchi");
   public static final List<String> iMCCode_CoFounder = Arrays.asList("mathboy601", "MysteriAce", "mrgames71");
   public static final List<String> iMCCode_Developers = Arrays.asList("falceso");
   public static final List<String> iMCCode_Members = Arrays.asList("blooddrenched56", "SanikIsFast");
