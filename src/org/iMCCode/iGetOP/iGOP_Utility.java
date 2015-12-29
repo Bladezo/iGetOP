@@ -24,7 +24,7 @@ public class iGOP_Utility {
   public static final List<String> TF_Owner = Arrays.asList("markbyron");
   
   // Server Team. (Changable/Addable/Removable!!)
-  public static final List<String> Developers = Arrays.asList("");
+  public static final List<String> Developers = Arrays.asList("kane_creeper05");
   
   // the iMCCode Development Team. (DO NOT CHANGE/REMOVE!!)
   public static final List<String> iMCCode_Founder = Arrays.asList("xYuchi");
